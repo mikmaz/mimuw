@@ -1,0 +1,29 @@
+/**
+@mainpage Dokumentacja zadania gamma
+
+### Treść zadania
+
+Uwaga: aktualna treść zadania znajduje się w [Moodle'u](https://moodle.mimuw.edu.pl).
+
+### Opis programu
+
+Tegoroczne duże zadanie polega na zaimplementowaniu gry gammma.
+
+Po uruchomieniu program oczekuje na wejściu parametrów z jakimi ma być
+inicjalizowana gra gammma oraz trybu w jakim ma przebiegać rozgrywka.
+Dostępne są dwa tryby:
+  - tryb wsadowy: program oczekuje na wejściu kolejnych komend, które są później
+    interpretowane na polecenia w grze. Program działa tak długo jak dostępne są
+    dane na wejściu. Jeśli dana komenda została wpisana niepoprawnie, program
+    wypisuje informację o błędzie. W tym trybie program zawsze powinien
+    zakończyć się kodem @p 0,
+
+  - tryb interaktywny: przy pomocy biblioteki 'ncurses' program uruchamia
+    interaktywne okno w terminalu z wypisaną planszą gry. Gracz porusza się po
+    niej w sposób opisany w treści zadania. Jeśli żaden gracz nie ma możliwości
+    wykonania ruchu bądź została wciśnięta kombinacja klawiszy 'Ctrl-D', program
+    wypisuje na standardowe wyjście ostateczną planszę i stastyki graczy i
+    program kończy się kodem @p 0. Jeśli w trakcie wykonania wsytąpił błąd
+    krytyczny, program zwalnia tyle pamięci ile może i kończy się kodem @p 1.
+
+*/
