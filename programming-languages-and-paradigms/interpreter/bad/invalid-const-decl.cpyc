@@ -1,0 +1,6 @@
+int main() {
+    // Error: 'const' should be typed only once
+    const const int x;
+
+    return 0;
+}

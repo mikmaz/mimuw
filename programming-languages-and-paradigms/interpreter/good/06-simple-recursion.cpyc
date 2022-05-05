@@ -1,0 +1,16 @@
+int fact(int n) {
+    if (n < 2) {
+        return 1;
+    }
+    else {
+        return n * fact(n-1);
+    }
+}
+
+int main() {
+    print("Factorial of 1:", fact(1));
+    print("Factorial of 4:", fact(4));
+    print("Factorial of 5:", fact(5));
+
+    return 0;
+}

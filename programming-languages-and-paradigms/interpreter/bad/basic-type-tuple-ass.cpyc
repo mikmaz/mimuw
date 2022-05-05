@@ -1,0 +1,6 @@
+int main() {
+    int a, b, c = 1;
+
+    // Error: can't use 'int' as tuple
+    <a, b> = c;
+}

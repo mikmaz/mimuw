@@ -1,0 +1,11 @@
+int main() {
+    const int x = 0;
+
+    // Error: const modification
+    x = 1;
+    
+    # x++;
+    # x--;
+
+    return 0;
+}

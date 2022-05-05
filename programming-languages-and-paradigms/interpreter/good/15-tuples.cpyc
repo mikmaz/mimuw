@@ -1,0 +1,19 @@
+int main () {
+    tuple <int, tuple <int, boolean, string>> t1 = <[ -1, <[ 1, true, "dobo" ]> ]>;
+    tuple<int, boolean, string> t2;
+    int x;
+
+    print("Before tuple assignment:", x, t2);
+    <x, t2> = t1;
+    print("After tuple assignment:", x, t2, "\n");
+
+    print("Nested tuple pattern-matching");
+    tuple <int, tuple <int, int>> t3 = <[ 1, <[ 2, 3 ]> ]>;
+    int a, b, c;
+    <a, <b, c>> = t3;
+
+    print("Tuple:", t3);
+    print("Matched pattern:", a, b, c);
+
+    return 0; 
+}

@@ -1,0 +1,14 @@
+int main() {
+    {
+        int x = 0;
+    }
+    
+    // Error: x is undeclared in this scope.
+    int y = x;
+
+    // Another example
+    // Error: Invocation of undeclared function.
+    # undeclared_fun();
+
+    return 0;
+}

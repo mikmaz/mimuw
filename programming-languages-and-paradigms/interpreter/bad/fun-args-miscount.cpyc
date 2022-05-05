@@ -1,0 +1,14 @@
+void foo(int x) {
+    return;
+}
+
+int main() {
+    // Error: too many arguments
+    foo(1, 2);
+
+    // Another example
+    // Error: insufficient number of arguments.
+    # foo();
+
+    return 0;
+}

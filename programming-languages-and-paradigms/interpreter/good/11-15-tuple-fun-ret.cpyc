@@ -1,0 +1,29 @@
+tuple<int, int> gcd_and_lcm(tuple <int, int> nums) {
+    int gcd(int a, int b) {
+        int c;
+        while (b != 0) {
+            c = a % b;
+            a = b;
+            b = c;
+        }
+        return a;
+    }
+
+    int x, y;
+    <x, y> = nums;
+
+    int g = gcd(x, y);
+    int l = (x * y) / g;
+
+    return <[ g, l ]>;
+}
+
+int main() {
+    int g, l, a = 30, b = 100;
+
+    <g, l> = gcd_and_lcm(<[30, 100]>);
+    print("GCD of", a, "and", b, ":", g);
+    print("LCM of", a, "and", b, ":", l);
+
+    return 0;
+}

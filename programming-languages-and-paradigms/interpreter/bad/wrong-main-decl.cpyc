@@ -1,0 +1,12 @@
+// Error: main top definition should return int
+void main() {
+    return 0;
+}
+
+// Another example:
+// Error: main shouldn't take any arguments
+/*
+int main(int x) {
+    return 0;
+}
+*/

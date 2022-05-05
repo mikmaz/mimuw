@@ -1,0 +1,15 @@
+/** 
+ * Note: Since tuple's elements are immutable by definition, declaring them as
+ * 'const' doesn't have much effect.
+ */
+int main() {
+    const tuple <const int, const tuple <const string>> t1 = <[ -1, <[ "dobo" ]> ]>;
+    tuple <const string> t2;
+    int x;
+
+    print("Before tuple assignment:", x, t2);
+    <x, t2> = t1;
+    print("After tuple assignment:", x, t2);
+
+    return 0;
+}

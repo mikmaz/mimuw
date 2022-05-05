@@ -1,0 +1,22 @@
+// Error: return type mismatch
+int foo() {
+    return true;
+}
+
+// Error: void return statemnt inside non-void function
+/*
+int boo() {
+    return;
+}
+*/
+
+// Error: non-void return statement inside void function
+/*
+void dobo() {
+    return 1;
+}
+*/
+
+int main() {
+    return 0;
+}

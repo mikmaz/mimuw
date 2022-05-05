@@ -1,0 +1,9 @@
+void foo() {
+    return;
+}
+
+int main() {
+    // Error: void function applied as value
+    int x = foo();
+    return 0;
+}

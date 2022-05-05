@@ -1,0 +1,35 @@
+// Correct: no return statements inside void functions are allowed
+void foo() {
+
+}
+
+// Error: no return statement
+/*
+int boo() {
+
+}
+*/
+
+// Correct: return statement in both if-else clauses guarantees returning
+int correct(int x) {
+    if (x > 0) {
+        return 0;
+    }
+    else {
+        return 1;
+    }
+}
+
+// Error: can't be sure if function will return
+int incorrect(int x) {
+    if (x > 0) {
+        return 0;
+    }
+    else {
+        print(x);
+    }
+}
+
+int main() {
+    return 0;
+}

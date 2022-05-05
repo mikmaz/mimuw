@@ -1,0 +1,8 @@
+int main() {
+    int x;
+
+    // Error: x is not a function
+    print(x());
+
+    return 0;
+}

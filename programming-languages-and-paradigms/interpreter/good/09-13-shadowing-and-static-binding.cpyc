@@ -1,0 +1,41 @@
+void simple_shadowing(int y) {
+    boolean x = false;
+    {
+        boolean x = true;
+        print("Am I in block:", x);
+        print("But I can still see outer scope identifiers: y =", y);
+    }
+    print("Am I in block:", x);
+}
+
+int simple_nested_fun(int a, int b) {
+    int gcd(int a, int b) {
+        int c;
+        while (b != 0) {
+            c = a % b;
+            a = b;
+            b = c;
+        }
+        return a;
+    }
+
+    return gcd(a, b);
+}
+
+void shadowing_nested_fun() {
+    print("If I'm not shadowed, I will infinitely recurse!");
+    void shadowing_nested_fun() {
+        print("Luckily, I'm shadowed.");
+    }
+
+    shadowing_nested_fun();
+}
+
+int main() {
+    simple_shadowing(1);
+    print();
+    print("GCD of 55 and 99:", simple_nested_fun(55, 99), "\n");
+    shadowing_nested_fun();
+
+    return 0;
+}

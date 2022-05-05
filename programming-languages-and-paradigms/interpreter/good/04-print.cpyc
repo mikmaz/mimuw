@@ -1,0 +1,23 @@
+int incr(int x) {
+    x++;
+    return x;
+}
+
+void dobo() {
+    return;
+}
+
+int main() {
+    int num = 0;
+    string str = "Hello, World!";
+
+    print("Simple print:", str, num, incr(num));
+    print("This function returns nothing:", dobo());
+    print();
+    
+    print("Simple incr test: incr(num) == num + 1");
+    print("Passed:", incr(num) == num + 1);
+    print(incr(num), "==", num + 1);
+
+    return 0;
+}

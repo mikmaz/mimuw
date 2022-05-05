@@ -1,0 +1,6 @@
+int main() {
+    // Error: 'void' in variable declaration
+    void x;
+
+    return 0;
+}

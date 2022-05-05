@@ -1,0 +1,23 @@
+int main() {
+    int x = 0;
+    {
+        // Correct: Shadows variable from outer scope.
+        int x = 1;
+    }
+    
+    // Error: Redeclaration of variable.
+    int x = 1;
+
+    return 0;
+}
+
+void foo() {
+    return;
+}
+
+// Error: Redeclaration of function.
+/*
+void foo(int x) {
+    return x;
+}
+*/

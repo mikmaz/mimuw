@@ -1,0 +1,4 @@
+// Error: main function unpresent in the file
+int not_main() {
+    return 0;
+}

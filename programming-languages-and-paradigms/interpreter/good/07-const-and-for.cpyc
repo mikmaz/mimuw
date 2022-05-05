@@ -1,0 +1,44 @@
+/** 
+ * Note: In language containing only basic types where everything is passed by
+ * value function returning const type is fairly meaningless.
+ */
+const int const_wrapper(int x) {
+    return x;
+}
+
+int const_unwrapper(const int x) {
+    return x;
+}
+
+int fact(int n) {
+    int res = 1;
+    for (const int i = 1 to n) {
+        res = res * i;
+    }
+
+    return res;
+}
+
+int main() {
+    const int num = 0;
+    const string str = "Hello, World!";
+    const boolean b = true;
+    print("Simple const values:", num, str, b);
+
+    const int n = const_unwrapper(1);  // int can be applied as const int
+    int m = const_wrapper(1);  // returned const int can be assigned to int
+
+    print("Factorial of 1:", fact(1));
+    print("Factorial of 4:", fact(4));
+    print("Factorial of 5:", fact(5));
+
+    for(const int i = 1 to -1) {
+        print("I shouldn't be evaluated.");
+    }
+
+    for(const int i = 1 to 1) {
+        print("I should be evaluated once: i =", i);
+    }
+
+    return 0;
+}
