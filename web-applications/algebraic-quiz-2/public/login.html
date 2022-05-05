@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./stylesheets/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./stylesheets/main.css'>
+</head>
+<body>
+    <h1>Zaloguj do Quizgebra</h1>
+    <a href="/">Powrót na stronę główną</a>
+    <div class="container jumbotron user_forms">
+    <form action="/login" method="post">
+        <div class="form-group">
+          <label for="login">Login:</label>
+          <input id="input_login" type="text" class="form-control" placeholder="Podaj login" name="login" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Hasło:</label>
+          <input id="input_pwd" type="password" class="form-control" placeholder="Podaj hasło" name="password" required>
+        </div>
+        <button id="login_user" type="submit" class="btn btn-primary">Zaloguj</button>
+      </form> 
+    </div>
+</body>

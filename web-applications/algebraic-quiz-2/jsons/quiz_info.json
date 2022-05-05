@@ -1,0 +1,89 @@
+[
+    {
+        "name": "multi",
+        "title": "Mnożenie",
+        "description": "Klasyczny quiz algebraiczny sprawdzający umiejętność mnożenia. Jako odpowiedź należy podać liczbę całkowitą, przy podaniu błędnej odpowiedzi naliczana jest 6 sekundowa kara.",
+        "example": "2 x 2 = ?",
+        "example_answer": "4",
+        "example_punishments": "Kara za błędną odpowiedź: +8s.",
+        "questions_no": 6,
+        "correct_answers": [96, 50, 1215, 800, 1050, 18330],
+        "punishment": 8,
+
+        "questions": [
+            {
+                "question": "8 x 12 = ?",
+                "question_no": 1
+            },
+
+            {
+                "question": "10 x 5 = ?",
+                "question_no": 2
+            },
+
+            {
+                "question": "27 x 45 = ?",
+                "question_no": 3
+            },
+
+            {
+                "question": "20 x 5 x 8 = ?",
+                "question_no": 4
+            },
+
+            {
+                "question": "15 x 10 x 7 = ?",
+                "question_no": 5
+            },
+
+            {
+                "question": "47 x 30 x 13 = ?",
+                "question_no": 6
+            }
+        ]
+    },
+
+    {
+        "name": "basic",
+        "title": "Dodawanie",
+        "description": "Klasyczny quiz algebraiczny sprawdzający umiejętność dodawania. Jako odpowiedź należy podać liczbę całkowitą, przy podaniu błędnej odpowiedzi naliczana jest 6 sekundowa kara.",
+        "example": "2 + 2 = ?",
+        "example_answer": "4",
+        "example_punishments": "Kara za błędną odpowiedź: +6s.",
+        "questions_no": 6,
+        "correct_answers": [47, 61, 62, 157, 57, 260],
+        "punishment": 6,
+
+        "questions": [
+            {
+                "question": "36 + 11 = ?",
+                "question_no": 1
+            },
+
+            {
+                "question": "46 + 15 = ?",
+                "question_no": 2
+            },
+
+            {
+                "question": "45 + 17 = ?",
+                "question_no": 3
+            },
+
+            {
+                "question": "67 + 8 + 82 = ?",
+                "question_no": 4
+            },
+
+            {
+                "question": "27 + 7 + 23 = ?",
+                "question_no": 5
+            },
+
+            {
+                "question": "93 + 94 + 73 = ?",
+                "question_no": 6
+            }
+        ]
+    }
+]

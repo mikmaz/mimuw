@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 id="title">ASD aproksymacje</h1>
+                <p id="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in diam in est maximus convallis. 
+                    Nullam cursus hendrerit elit, vestibulum auctor eros.
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <div class="progress" id="quiz_progress">
+                </div>
+                <div id="question_group">
+                    <p class="no_margin_bottom">
+                        <strong id="question_number"></strong>
+                    </p>
+                    <p id="question" class="no_margin_bottom">
+                    </p>
+                </div>
+                <div class="form-group" id="answer_group">
+                    <label for="ans"><strong>Odpowiedź:</strong></label>
+                    <input class="form-control" id="ans">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary" id="previous">Poprzednie pytanie</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary" id="next">Następne pytanie</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='quiz.js'></script>
+</body>
+</html>

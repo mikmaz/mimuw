@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./stylesheets/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./stylesheets/main.css'>
+</head>
+<body>
+    <div class="container-fluid" id="intro">
+        <h1>Quizgebra</h1>
+        <p>Quizy algebraiczne na czas.</p>
+    </div> 
+    <div class="container-fluid" id="main-main-page-div">
+        <div class="row">
+            <div class="col-lg-3 default-margin-bottom">
+                <h3>Wybierz quiz</h3>
+                <select class="custom-select" size="5" id="select_quiz"></select>
+            </div>
+            <div class="col-lg-9">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5 id="title"></h5>
+                            <p id="description"></p>
+                        </div>
+                        <div class="col-lg-6" id="example">
+                            <p id="example_question"></p>
+                            <p id="example_answer"></p>
+                        </div>
+                        <button id="begin" type="button" class="btn btn-primary">
+                            Zacznij!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./javascripts/main.js'></script>
+</body>
+</html>

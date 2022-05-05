@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Quizgebra</h1>
+        <p>Quizy algebraiczne na czas.</p>
+    </div> 
+    <div class="container-fluid" id="main-main-page-div">
+        <div class="row">
+            <div class="col-lg-3 default-margin-bottom">
+                <h3>Wybierz quiz</h3>
+                <select class="custom-select" size="5" id="select_quiz">
+                    <option value="asd">Aproksymacje ASD</option>
+                    <option value="basic">Dodawanie</option>
+                    <option value="blank">blank</option>
+                    <option value="blank">blank</option>
+                    <option value="blank">blank</option>
+                    <option value="blank">blank</option>
+                    <option value="blank">blank</option>
+                    <option value="blank">blank</option>
+                </select>
+            </div>
+            <div class="col-lg-9">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5 id="title"></h5>
+                            <p id="description"></p>
+                        </div>
+                        <div class="col-lg-4" id="example">
+                            <p id="example_question"></p>
+                            <p id="example_answer"></p>
+                        </div>
+                        <table class="col-lg-4" id="leaderboard">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><strong>Top 5</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard_body">
+                            </tbody>
+                        </table>
+                        <button id="begin" type="button" class="btn btn-primary">
+                            Zacznij!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

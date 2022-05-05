@@ -1,0 +1,41 @@
+{
+  "name": "algebraquiz",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha --timeout 10000 -r ts-node/register tests/test.ts --lib ES2015",
+    "start": "node ./bin/www",
+    "createdb": "node ./scripts/init_db.js"
+  },
+  "compilerOptions": {
+    "moduleResolution": "node"
+  },
+  "author": "Mikołaj Mazurczyk",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "@types/sqlite3": "^3.1.6",
+    "connect-sqlite3": "^0.9.11",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.7.3",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/faker": "^4.1.12",
+    "@types/mocha": "^7.0.2",
+    "@types/selenium-webdriver": "^4.0.9",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "faker": "^4.1.0",
+    "mocha": "^8.2.0",
+    "mocha-webdriver": "^0.2.8",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
