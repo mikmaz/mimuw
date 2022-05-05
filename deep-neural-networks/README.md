@@ -1,7 +1,7 @@
 # Deep neural networks
 
 Academic year: **2020/2021** \
-Lecturer: **Marek Cygal** \
+Lecturer: **Marek Cygan** \
 Tutor: **Sebastian Jaszczur**
 
 ### Assignments
